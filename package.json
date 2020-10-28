@@ -1,0 +1,33 @@
+{
+  "name": "bfn-webauthn-server",
+  "version": "0.2.0",
+  "description": "Boot Fidelity Webauthn Server Library",
+  "main": "index.js",
+  "dependencies": {
+    "@peculiar/asn1-android": "2.0.23",
+    "@peculiar/asn1-schema": "2.0.23",
+    "@peculiar/asn1-x509": "2.0.23",
+    "@simplewebauthn/typescript-types": "^0.10.0",
+    "base64url": "3.0.1",
+    "cbor": "5.0.2",
+    "core-js": "^3.6.5",
+    "elliptic": "6.5.3",
+    "jsrsasign": "8.0.20",
+    "jwk-to-pem": "2.0.4",
+    "node-fetch": "2.6.0",
+    "node-rsa": "1.1.1"
+  },
+  "keywords": [
+    "webauthn",
+	"authentication",
+    "fido",
+	"fido2",
+	"web authentication",
+	"u2f",
+	"server",
+    "bfn"
+  ],
+  "author": "Blue Fidelity Inc. (https://www.bluefidelity.com/)",
+  "homepage": "https://www.bluefidelity.com/",
+  "license": "MIT"
+}
