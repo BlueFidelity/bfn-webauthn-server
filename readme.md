@@ -65,7 +65,7 @@ var exampleAssertionResponse = {
 	expectedOrigin: "https://example.com",
 	expectedRPID: "example.com",
 	authenticator: {
-		publicKey: "IyLjaGFsbGVuZ2UiOnpFtNm4yS2dNQ.......JkuZXhoCP3NifCPJhdXRobisbGVVhdGUizy",
+		publicKey: "pAEIyLjaGFsbGVuZ2UiOnpFtNm4yS2dNQ.......JkuZXhoCP3NifCPJhdXRobisbGVVhdGUizyAAE",
 		counter: 0
 	}
 };
