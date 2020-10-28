@@ -32,7 +32,7 @@ var exampleAttestationResponse = {
 	},
 	expectedChallenge: "58dCluFFQKrmrJzbPt_O5VNWUBoHoW4gY01eZ_M2PjRYLZMgiUE86Krd7Jc",
 	expectedOrigin: "https://example.com",
-	expectedRPID: "example.com",
+	expectedRPID: "example.com"
 };
 
 simpleWebAuthn.verifyAttestationResponse(exampleAttestationResponse).then(function(verification){
@@ -51,14 +51,23 @@ simpleWebAuthn.verifyAttestationResponse(exampleAttestationResponse).then(functi
 var simpleWebAuthn = require('bfn-webauthn-server');
 
 var exampleAssertionResponse = {
-	"id": "csR4ANRLKorPuJENvQQW8egUJYh-8ZWIqiGloO032Oc",
-	"rawId": "csR4ANRLKorPuJENvQQW8egUJYh-8ZWIqiGloO032Oc",
-	"response": {
-		"clientDataJSON": "eyJjaGFsbGVuZ2UiOiI3YjFtNm4yS2dNQ......IsInR5cGUiOiJ3ZWJhdXRobi5jcmVhdGUifQ",
-		"signature": "IQLxgOSZP3npllWWth8Yj......JkuZXhoCP3NifZw",
-		"authenticatorData": "o2NmbXRmcGFja2VkZ2F0dFN0...DvLFRA5Bn3dGgzy"
+	credential: {
+		"id": "csR4ANRLKorPuJENvQQW8egUJYh-8ZWIqiGloO032Oc",
+		"rawId": "csR4ANRLKorPuJENvQQW8egUJYh-8ZWIqiGloO032Oc",
+		"response": {
+			"clientDataJSON": "eyJjaGFsbGVuZ2UiOiI3YjFtNm4yS2dNQ.....IsInR5cGUiOiJ3ZWJhdXRobi5jcmVhdGUifQ",
+			"signature": "IQLxgOSZP3npllWWth8Yj....JkuZXhoCP3NifZw",
+			"authenticatorData": "o2NmbXRmcGFja2VkZ2F0dFN0...DvLFRA5Bn3dGgzy"
+		},
+		"type": "public-key"
 	},
-	"type": "public-key"
+	expectedChallenge: "58dCluFFQKrmrJzbPt_O5VNWUBoHoW4gY01eZ_M2PjRYLZMgiUE86Krd7Jc",
+	expectedOrigin: "https://example.com",
+	expectedRPID: "example.com",
+	authenticator: {
+		'publicKey': "IyLjaGFsbGVuZ2UiOnpFtNm4yS2dNQ.......JkuZXhoCP3NifCPJhdXRobisbGVVhdGUizy",
+		'counter': 0
+	}
 };
 
 var err, verification;

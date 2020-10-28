@@ -1,6 +1,6 @@
 {
   "name": "bfn-webauthn-server",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Boot Fidelity Webauthn Server Library",
   "main": "index.js",
   "repository": {
